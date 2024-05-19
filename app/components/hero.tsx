@@ -2,7 +2,7 @@
 
 function Hero() {
   return (
-    <section className="bg-blue-100 h-[80vh] flex px-32 items-center">
+    <section className="bg-blue-50 h-[80vh] flex px-32 items-center">
       <div className="grid grid-cols-3 gap-24">
         <div className="col-span-2 flex flex-col gap-6">
           <h1 className="text-6xl font-semibold">Somos un equipo de primera</h1>
