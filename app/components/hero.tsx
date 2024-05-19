@@ -10,9 +10,13 @@ function Hero() {
           <h1 className="text-5xl font-semibold">Bootcamp gratuito</h1>
           <p className="text-xl text-gray-700 pr-16">
             En SDC Education, ofrecemos un bootcamp gratuito de 3 meses en
-            desarrollo web, enseñando React, Node.js, MongoDB y PostgreSQL.
-            Nuestro objetivo es capacitar desarrolladores web junior y promover
-            la igualdad de oportunidades.
+            <span className="font-semibold pl-2">
+              {" "}
+              desarrollo web Full Stack
+            </span>
+            , enseñando React, Node.js, MongoDB y PostgreSQL. Nuestro objetivo
+            es capacitar desarrolladores web junior y promover la igualdad de
+            oportunidades.
           </p>
 
           <div>
