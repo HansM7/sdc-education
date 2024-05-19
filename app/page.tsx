@@ -13,7 +13,7 @@ export default function Home() {
       <SectionInformationBasic></SectionInformationBasic>
       <HomeStack></HomeStack>
       <DetailClass></DetailClass>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

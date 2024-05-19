@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Header from "../components/header";
 import BootcampHero from "./hero";
+import BootcampTechnologies from "./technologies";
 
 export const metadata: Metadata = {
   title: "SDC - Education Bootcamp",
@@ -18,6 +19,7 @@ function Page() {
     <div className="flex flex-col">
       <Header></Header>
       <BootcampHero></BootcampHero>
+      <BootcampTechnologies></BootcampTechnologies>
     </div>
   );
 }

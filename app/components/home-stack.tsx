@@ -25,11 +25,7 @@ function HomeStack() {
           </div>
         </div>
         <div>
-          <img
-            className="w-full rounded-lg"
-            src="https://static.vecteezy.com/system/resources/previews/008/689/700/non_2x/navigation-banner-web-icon-wind-rose-route-geolocation-map-search-compass-direction-address-map-illustration-concept-vector.jpg"
-            alt=""
-          />
+          <img className="w-full rounded-lg" src="tech-banner.png" alt="" />
         </div>
       </RevealWrapper>
       <RevealWrapper

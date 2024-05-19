@@ -2,6 +2,7 @@
 
 import { Shapes } from "lucide-react";
 import Link from "next/link";
+import HeroIcon from "../icons/hero-icon";
 
 function Hero() {
   return (
@@ -14,7 +15,7 @@ function Hero() {
         />
       </div>
       <div className=" xl:px-24 md:px-16 px-8  py-8 grid grid-cols-5 gap-8 z-10 ">
-        <div className="xl:col-span-3 col-span-5 flex flex-col gap-6">
+        <div className="lg:col-span-3 col-span-5 flex flex-col gap-6">
           <h1 className="md:text-5xl sm:text-4xl  text-2xl font-semibold animate-fade-right">
             Bootcamp gratuito
           </h1>
@@ -49,12 +50,13 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="xl:col-span-2 col-span-5">
-          <img
+        <div className="lg:col-span-2 col-span-5 flex items-center">
+          {/* <img
             className="w-full rounded-lg xl:object-contain xl:h-auto object-top h-[300px]"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwkGuV5vLULJTE7FdtzoaQo_vVuSq5bmLz5YRiIGD7g&s"
+            src="https://assets.exercism.org/assets/graphics/landing-page-top-74da2134b88efcf34b05e804987fdfb832771716.svg"
             alt=""
-          />
+          /> */}
+          <HeroIcon></HeroIcon>
         </div>
       </div>
     </section>

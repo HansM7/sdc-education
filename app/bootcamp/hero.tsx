@@ -68,9 +68,11 @@ function BootcampHero() {
           {technologies.map((item, index) => (
             <div
               key={index}
-              className={`p-4 flex flex-col items-center justify-center overflow-hidden  rounded-3xl bg-white border-2 ${
-                item.enabled ? "border-violet-400" : "border-gray-500"
-              }  hover:scale-110 hover:bg-violet-50 transition-all cursor-pointer group `}
+              className={`md:p-4 p-3 flex flex-col items-center justify-center overflow-hidden  rounded-3xl bg-white border-2 ${
+                item.enabled
+                  ? "border-violet-400"
+                  : "border-gray-500 cursor-no-drop"
+              }  hover:scale-105 hover:bg-violet-50 transition-all cursor-pointer group `}
             >
               <img
                 className={`w-12 rounded-lg object-cover ${
@@ -83,10 +85,10 @@ function BootcampHero() {
           ))}
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-semibold text-center">
+          <h1 className="md:text-4xl text-2xl font-semibold text-center">
             Aplicamos tecnologias de Vanguardia
           </h1>
-          <p className="text-xl text-center text-gray-600">
+          <p className="md:text-xl text-base text-center text-gray-600">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil
             labore dolor quisquam nostrum voluptas inventore ex ullam omnis
             dolorem ratione necessitatibus suscipit veritatis, natus nulla
