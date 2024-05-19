@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="px-32 py-4 border-t">
+    <footer className="xl:px-24 md:px-16 px-8 py-4 border-t">
       <div className="grid grid-cols-4 gap-4">
         <div className="col-span-2 flex flex-col gap-4">
           <span className="font-semibold text-xl">Sobre Nosotros</span>

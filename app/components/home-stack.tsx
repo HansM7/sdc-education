@@ -1,68 +1,65 @@
+"use client";
+import { RevealWrapper } from "next-reveal";
 import React from "react";
 
 function HomeStack() {
   return (
-    <section className="grid grid-cols-2 py-16 bg-blue-50">
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-          <img
-            className="w-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AUGhPbE6sfpftoP-JJJxGhdRer5_12XPqvJ1Q0WJFQ&s"
-            alt=""
-          />
-          <img
-            className="w-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AUGhPbE6sfpftoP-JJJxGhdRer5_12XPqvJ1Q0WJFQ&s"
-            alt=""
-          />
-        </div>
+    <section className="grid grid-cols-2 py-16 xl:px-24 md:px-16 px-8 bg-blue-50  gap-16">
+      <RevealWrapper
+        origin="left"
+        className="flex flex-col gap-4 xl:col-span-1 col-span-2"
+      >
         <div className="flex flex-col gap-2 ">
           <h2 className="text-2xl">Desarrollo Frontend</h2>
-          <p className="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            amet animi, quas voluptate vitae reiciendis omnis dignissimos! Quia
-            numquam omnis vero voluptates repudiandae quaerat nemo nobis, dicta
-            eos harum similique?
+          <p className="text-gray-700">
+            Aprende las habilidades más demandadas en la industria tecnológica
+            actual con este bootcamp intensivo que te llevará desde los
+            fundamentos del desarrollo web hasta la creación de aplicaciones
+            interactivas con ReactJS.
           </p>
-          <div>
-            <ul>
-              <li>Item 1 description</li>
-              <li>Item 2 description</li>
-              <li>Item 3 description</li>
-            </ul>
-          </div>
 
           <div className="mt-4">
-            <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg">
+            <button className="px-4 py-2 bg-blue-600 text-white  rounded-lg">
               Ver temario frontend
             </button>
           </div>
         </div>
-      </div>
-      <div className="grid grid-cols-2 gap-4">
+        <div>
+          <img
+            className="w-full rounded-lg"
+            src="https://static.vecteezy.com/system/resources/previews/008/689/700/non_2x/navigation-banner-web-icon-wind-rose-route-geolocation-map-search-compass-direction-address-map-illustration-concept-vector.jpg"
+            alt=""
+          />
+        </div>
+      </RevealWrapper>
+      <RevealWrapper
+        origin="right"
+        className="flex flex-col gap-4 xl:col-span-1 col-span-2"
+      >
         <div className="flex flex-col gap-2 ">
           <h2 className="text-2xl">Desarrollo Backend</h2>
-          <p className="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            amet animi, quas voluptate vitae reiciendis omnis dignissimos! Quia
-            numquam omnis vero voluptates repudiandae quaerat nemo nobis, dicta
-            eos harum similique?
+          <p className="text-gray-700">
+            Conviértete en un desarrollador back-end completo con este bootcamp
+            intensivo que te enseñará a crear aplicaciones web robustas y
+            escalables utilizando Node.js, bases de datos relacionales y no
+            relacionales, y las mejores prácticas de desarrollo modular y por
+            capas.
           </p>
 
           <div className="mt-4">
-            <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg">
+            <button className="px-4 py-2 bg-blue-600 text-white  rounded-lg">
               Ver temario backend
             </button>
           </div>
         </div>
         <div>
           <img
-            className="w-full"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AUGhPbE6sfpftoP-JJJxGhdRer5_12XPqvJ1Q0WJFQ&s"
+            className="w-full rounded-lg"
+            src="https://static.vecteezy.com/system/resources/previews/008/689/700/non_2x/navigation-banner-web-icon-wind-rose-route-geolocation-map-search-compass-direction-address-map-illustration-concept-vector.jpg"
             alt=""
           />
         </div>
-      </div>
+      </RevealWrapper>
     </section>
   );
 }
