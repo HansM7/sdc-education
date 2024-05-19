@@ -15,7 +15,7 @@ function SectionInformationBasic() {
     <section className="grid grid-cols-2 gap-8 py-16 xl:px-24 md:px-16 px-8">
       <RevealWrapper origin="left" className="md:col-span-1 col-span-2">
         <img
-          className="w-full "
+          className="w-full h-full object-cover rounded-lg shadow-md "
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AUGhPbE6sfpftoP-JJJxGhdRer5_12XPqvJ1Q0WJFQ&s"
           alt=""
         />
@@ -44,7 +44,7 @@ function SectionInformationBasic() {
               <li className="" key={index}>
                 <RevealWrapper
                   origin="left"
-                  delay={index + 100 + index * 500}
+                  delay={index + 500 + index * 500}
                   className="flex gap-2 items-center"
                 >
                   <ChevronRight size={16} className="text-violet-700" />

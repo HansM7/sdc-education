@@ -1,3 +1,4 @@
+import DetailClass from "./components/detail-class";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero></Hero>
       <SectionInformationBasic></SectionInformationBasic>
       <HomeStack></HomeStack>
+      <DetailClass></DetailClass>
       <Footer></Footer>
     </div>
   );
