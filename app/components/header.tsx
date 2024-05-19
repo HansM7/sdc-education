@@ -8,7 +8,7 @@ function Header() {
           <div className="flex gap-4">
             <img width={42} height={32} src="icon-sdc.png" alt="" />
             <div className="flex flex-col">
-              <span className="text-lg font-semibold text-blue-400">SDC</span>
+              <span className="text-lg font-semibold text-blue-600">SDC</span>
               <span className="text-slate-600 font-light text-sm">
                 Education
               </span>
