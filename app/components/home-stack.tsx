@@ -1,8 +1,16 @@
 "use client";
+import { ChevronRight } from "lucide-react";
 import { RevealWrapper } from "next-reveal";
 import React from "react";
 
 function HomeStack() {
+  const itemDescriptions = [
+    "Desarrollo Frontend Basico",
+    "Desarrollo Frontend Intermedio",
+    "Desarrollo Backend Basico",
+    "Desarrollo Backend Intermedio",
+    "Base de datos relacionales y no relacionales",
+  ];
   return (
     <section className="grid grid-cols-2 py-16 xl:px-24 md:px-16 px-8 bg-blue-50  gap-16">
       <RevealWrapper
@@ -18,14 +26,28 @@ function HomeStack() {
             interactivas con ReactJS.
           </p>
 
+          <div>
+            <ul>
+              {itemDescriptions.map((item, index) => (
+                <li className="" key={index}>
+                  <RevealWrapper
+                    origin="left"
+                    delay={index + 500 + index * 500}
+                    className="flex gap-2 items-center"
+                  >
+                    <ChevronRight size={16} className="text-violet-700" />
+                    <span className="text-violet-700">{item}</span>
+                  </RevealWrapper>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="mt-4">
             <button className="px-4 py-2 bg-blue-600 text-white  rounded-lg">
               Ver temario frontend
             </button>
           </div>
-        </div>
-        <div>
-          <img className="w-full rounded-lg" src="tech-banner.png" alt="" />
         </div>
       </RevealWrapper>
       <RevealWrapper
@@ -42,18 +64,28 @@ function HomeStack() {
             capas.
           </p>
 
+          <div>
+            <ul>
+              {itemDescriptions.map((item, index) => (
+                <li className="" key={index}>
+                  <RevealWrapper
+                    origin="left"
+                    delay={index + 500 + index * 500}
+                    className="flex gap-2 items-center"
+                  >
+                    <ChevronRight size={16} className="text-violet-700" />
+                    <span className="text-violet-700">{item}</span>
+                  </RevealWrapper>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="mt-4">
             <button className="px-4 py-2 bg-blue-600 text-white  rounded-lg">
               Ver temario backend
             </button>
           </div>
-        </div>
-        <div>
-          <img
-            className="w-full rounded-lg"
-            src="https://static.vecteezy.com/system/resources/previews/008/689/700/non_2x/navigation-banner-web-icon-wind-rose-route-geolocation-map-search-compass-direction-address-map-illustration-concept-vector.jpg"
-            alt=""
-          />
         </div>
       </RevealWrapper>
     </section>
