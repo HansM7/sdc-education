@@ -1,6 +1,25 @@
+import { Gift } from "lucide-react";
 import Link from "next/link";
 
 function Header() {
+  const items = [
+    {
+      name: "Bootcamp Basico",
+      path: "bootcamp-basico",
+    },
+    {
+      name: "Bootcamp Avanzado",
+      path: "bootcamp-avanzado",
+    },
+    {
+      name: "Cursos",
+      path: "cursos",
+    },
+    {
+      name: "Nosotros",
+      path: "nosotros",
+    },
+  ];
   return (
     <header className="w-full xl:px-24 md:px-16 px-8 py-4 border-b">
       <nav className="w-full flex justify-between items-center">
@@ -15,10 +34,18 @@ function Header() {
             </span>
           </div>
         </Link>
-        <div className="md:flex hidden items-center gap-8 font-semibold text-gray-700">
-          <div>
+        <div className="md:flex hidden items-center gap-8 font-semibold text-slate-700">
+          <div className="relative">
             <span className="">
-              <Link href={"/bootcamp"}>Bootcamp</Link>
+              <Link href={"/bootcamp"}>Bootcamp Basico</Link>
+            </span>
+            <span className="absolute -right-5 -top-2">
+              <Gift className="animate-bounce text-blue-400" />
+            </span>
+          </div>
+          <div className="relative">
+            <span className="">
+              <Link href={"/bootcamp"}>Bootcamp Avanzado</Link>
             </span>
           </div>
           <div>

@@ -136,19 +136,23 @@ function BootcampCourses() {
           {techs.map((item, index) => (
             <RevealWrapper origin="left" key={index} delay={index * 200 + 500}>
               <div
-                className={`rounded-lg px-3 py-8 border-2 border-blue-100 transition-all ${
+                className={`flex items-center rounded-lg px-3 py-4 gap-2 border-2 border-blue-100 transition-all ${
                   item.id === techSelected.id ? " bg-blue-100 " : "bg-white"
                 }`}
                 role="button"
                 onClick={() => handleNumberSelected(item)}
               >
-                <span>❎</span>
-                <span className="hidden md:visible">{item.name}</span>
+                <img
+                  className="w-24 "
+                  src="https://cdn-icons-png.flaticon.com/512/2210/2210184.png"
+                  alt=""
+                />
+                <span className="hidden md:flex">{item.name}</span>
               </div>
             </RevealWrapper>
           ))}
         </div>
-        <div className="col-span-2 rounded-lg w-full bg-slate-200  p-4">
+        <div className="col-span-2 rounded-lg w-full bg-blue-100  p-4">
           <div className="w-full grid md:grid-cols-2 grid-cols-1 overflow-hidden gap-2 ">
             {animate &&
               techSelected.targets.map((item: any, index: number) => (
