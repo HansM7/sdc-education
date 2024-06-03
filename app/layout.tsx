@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 const poppins = Poppins({
-  weight: "400",
+  weight: ["100", "200", "300", "400", "600", "700", "800", "900"],
   subsets: ["latin", "latin-ext"],
 });
 

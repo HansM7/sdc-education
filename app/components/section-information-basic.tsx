@@ -2,65 +2,56 @@
 
 import { BookMarked, ChevronRight } from "lucide-react";
 import { RevealWrapper } from "next-reveal";
+import LayoutSection from "./layout-section";
 
 function SectionInformationBasic() {
-  const itemDescriptions = [
-    "Desarrollo Frontend Basico",
-    "Desarrollo Frontend Intermedio",
-    "Desarrollo Backend Basico",
-    "Desarrollo Backend Intermedio",
-    "Base de datos relacionales y no relacionales",
+  const data = [
+    {
+      title: "Desarrollo Frontend",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit, dignissimos quod earum eaque impedit commodi.",
+    },
+    {
+      title: "Desarrollo Frontend",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit, dignissimos quod earum eaque impedit commodi.",
+    },
+    {
+      title: "Desarrollo Frontend",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit, dignissimos quod earum eaque impedit commodi.",
+    },
   ];
   return (
-    <section className="grid grid-cols-2 gap-8 py-16 xl:px-24 md:px-16 px-8">
-      <RevealWrapper origin="left" className="md:col-span-1 col-span-2">
-        <img
-          className="w-full h-full object-cover rounded-lg shadow-md "
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AUGhPbE6sfpftoP-JJJxGhdRer5_12XPqvJ1Q0WJFQ&s"
-          alt=""
-        />
-      </RevealWrapper>
-      <RevealWrapper
-        origin="right"
-        className="md:col-span-1 col-span-2 flex flex-col gap-4 justify-center"
-      >
-        <div className="uppercase text-blue-600 flex gap-2 ">
-          <BookMarked strokeWidth={1} size={24} />
-          <span>Solo tu decides tu futuro</span>
-        </div>
-        <h2 className="xl:text-4xl text-2xl">
-          Conoce un poco mas del Bootcamp
-        </h2>
-        <p className="text-gray-700">
-          Nuestro bootcamp esta orientado a personas que estan empezando en el
-          mundo del desarrollo web. No es un bootcamp sencillo, es un bootcamp
-          cuya mision es ensenarte sobre lo que verdaderamente necesitas como
-          desarrollador en la vida real.
-        </p>
-        <span className="font-semibold">Ofrecemos:</span>
-        <div>
-          <ul>
-            {itemDescriptions.map((item, index) => (
-              <li className="" key={index}>
-                <RevealWrapper
-                  origin="left"
-                  delay={index + 500 + index * 500}
-                  className="flex gap-2 items-center"
-                >
-                  <ChevronRight size={16} className="text-violet-700" />
-                  <span className="text-violet-700">{item}</span>
-                </RevealWrapper>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="mt-4">
-          <button className="px-4 py-2 bg-blue-600 text-white  rounded-lg md:text-base text-sm">
-            Ver mas...
-          </button>
-        </div>
-      </RevealWrapper>
-    </section>
+    <LayoutSection bg="bg-gray-50">
+      <div className="grid  md:grid-cols-3 gap-8 h-[90vh]">
+        {data.map((item, index) => (
+          <RevealWrapper
+            delay={index * 200 + 800}
+            origin="bottom"
+            className="bg-violet-200  grid grid-cols-5 h-fit rounded-lg p-4"
+            key={index}
+          >
+            <div className="flex flex-col col-span-3">
+              <RevealWrapper delay={1200} origin="left" className="">
+                <span className="text-xl font-semibold">{item.title}</span>
+              </RevealWrapper>
+              <RevealWrapper delay={1200} origin="left" className="">
+                <p>{item.description}</p>
+              </RevealWrapper>
+            </div>
+            <div className="col-span-2">
+              <RevealWrapper delay={1200} origin="right" className="">
+                <img
+                  src="https://cdni.iconscout.com/illustration/premium/thumb/frontend-developer-7364653-6024620.png?f=webp"
+                  alt=""
+                />
+              </RevealWrapper>
+            </div>
+          </RevealWrapper>
+        ))}
+      </div>
+    </LayoutSection>
   );
 }
 

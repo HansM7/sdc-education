@@ -1,19 +1,9 @@
-import DetailClass from "./components/detail-class";
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import HomeStack from "./components/home-stack";
-import SectionInformationBasic from "./components/section-information-basic";
+import Home from "./home";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="flex flex-col">
-      <Header></Header>
-      <Hero></Hero>
-      <SectionInformationBasic></SectionInformationBasic>
-      <HomeStack></HomeStack>
-      <DetailClass></DetailClass>
-      {/* <Footer></Footer> */}
+      <Home />
     </div>
   );
 }

@@ -67,3 +67,21 @@ export default function App() {
     </>
   );
 }
+
+// <div className="w-full md:h-[70vh] overflow-hidden bg-blue-50 opacity-50 absolute z-0 md:flex hidden ">
+
+//         <div className="area">
+//           <ul className="circles">
+//             <li></li>
+//             <li></li>
+//             <li></li>
+//             <li></li>
+//             <li></li>
+//             <li></li>
+//             <li></li>
+//             <li></li>
+//             <li></li>
+//             <li></li>
+//           </ul>
+//         </div>
+//       </div>

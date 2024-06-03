@@ -21,7 +21,7 @@ function Header() {
     },
   ];
   return (
-    <header className="w-full xl:px-24 md:px-16 px-8 py-4 border-b">
+    <header className="w-full xl:px-32 md:px-16 px-8 py-4 border-b">
       <nav className="w-full flex justify-between items-center">
         <Link href={"/"} className="flex gap-4">
           <img className="md:w-12 md:h-12 w-8 h-8" src="icon-sdc.png" alt="" />
@@ -37,7 +37,7 @@ function Header() {
         <div className="md:flex hidden items-center gap-8 font-semibold text-slate-700">
           <div className="relative">
             <span className="">
-              <Link href={"/bootcamp"}>Bootcamp Basico</Link>
+              <Link href={"/fundamentals"}>Fundamentals</Link>
             </span>
             <span className="absolute -right-5 -top-2">
               <Gift className="animate-bounce text-blue-400" />
@@ -45,14 +45,10 @@ function Header() {
           </div>
           <div className="relative">
             <span className="">
-              <Link href={"/bootcamp"}>Bootcamp Avanzado</Link>
+              <Link href={"/bootcamp"}>Bootcamp </Link>
             </span>
           </div>
-          <div>
-            <span>
-              <Link href={"/technologies"}>Tecnologias</Link>
-            </span>
-          </div>
+
           <div>
             <span>
               <Link href={"/bootcamp"}>Nosotros</Link>

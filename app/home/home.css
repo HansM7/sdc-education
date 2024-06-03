@@ -1,0 +1,12 @@
+.shiny-text {
+  background: linear-gradient(90deg, transparent,#f59e0b, transparent);
+  background-size: 200% 100%;
+  animation: shine 2s infinite;
+  background-color: #d97706;
+}
+
+@keyframes shine {
+  to {
+      background-position: -200% 0;
+  }
+}
